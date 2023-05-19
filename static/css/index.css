@@ -1,0 +1,175 @@
+body{background-attachment: fixed;}
+
+header{
+  height: 6em;
+  margin: 0;
+  background-color: #191818;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+
+
+footer{
+  position:static;
+  bottom: 0;
+  width:100%;
+  height:100px;
+  background-color: #191818;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.footText{
+  position: static;
+  right: 10px;
+  bottom: 0;
+  color: white;
+  font-family: "Arial", fantasy;
+  display:flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.logo{
+  width: 50%;
+  min-width: 125px;
+  max-width: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stat{
+  width: 25%;
+  border-color: #191818;
+  border-style: solid;
+  border-width: 5px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+}
+
+#photo_groupe{
+  display: block;
+  width: 100%;
+  border-style: solid;
+  border-color: #191818;
+  border-radius: 15px;
+  border-width: 5px;
+  margin-top: 5%;
+}
+.choix{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 200%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Arial", fantasy;
+}
+
+html{
+  font-family: "Poppins", sans-serif;
+  padding-left: 2%;
+  font-size: medium;
+  padding-right: 2%;
+  color: #efdede;
+}
+
+#jouer{
+  display: block;
+  margin-right: auto;
+  margin-left: 7.5%;
+}
+
+#forum{    
+  display: block;
+  margin-right: 7.5%;
+  margin-left: auto;
+}
+
+a:hover{
+  transition: 400ms;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+
+#presentation{
+  text-align: justify;
+  font-size: large;
+}
+
+.horizontale{
+  background-color: blue;
+  background-image:linear-gradient(45deg, #41E8FF, #41A3FF);
+  background-size: 100%;
+  background-repeat: repeat;
+  height: 3px;
+  width: 200px;
+  margin-left: 0%;
+}
+
+
+@media(orientation: portrait){
+.droite .gauche{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  margin-right:20%;
+  margin-top: 20px;
+}
+
+
+.profile{
+  width: 90%;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #191818;
+}
+
+.queries{
+  opacity: 100%;
+  background-color: blue;
+  background-image:linear-gradient(45deg, #41E8FF, #41A3FF);
+  background-size: 100%;
+  background-repeat: repeat;
+  height: 3px;
+}}
+
+
+@media  (orientation: landscape){
+.droite{
+  text-align: justify;
+  display: flex;
+  word-wrap: break-word;
+  margin-top: 20px;
+}
+
+.gauche{
+  display: flex;
+  flex-direction: row-reverse;
+  word-wrap: break-word;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.profile{
+  width: 75%;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #191818;
+}
+
+.queries{
+  opacity: 0%;
+}}

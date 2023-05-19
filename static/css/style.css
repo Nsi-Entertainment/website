@@ -1,0 +1,125 @@
+/*html correspond à l'ensemble de la page*/
+
+html
+{
+    background-color: rgb(58, 51, 51);
+    font-family: "comic sans ms", Arial, sans-serif;
+}
+
+/*body correspond au corps de la page, soit le fond du tchat*/
+
+body
+{
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgb(93, 90, 86);
+    padding: 20px 20px 0px 0px;
+}
+
+/*h1 correspond au titre du site situé en haut de la page*/
+
+h1
+{
+    text-align: center;
+    color:white;
+    font-family: "papyrus", Arial, sans-serif;
+    font-size: 45px;
+}
+
+
+/*boite de message correspond aux propriétés css de chaque message*/
+
+.messagebox
+{
+    text-align : right;
+    background-color: rgb(35, 36, 36);
+    margin: 50px;
+    padding: 20px;
+    color:white;
+    word-wrap: break-word;
+}
+
+/*pseudo_display correspond au pseudo et au message dans la boite du message, on assigne sa position pour qu'il soit en haut à gauche*/
+
+.pseudo_display
+{
+    text-align : left;
+    padding: 0px 20px 0px 0px;
+}
+
+/*heure correspond à l'heure du message*/
+
+.heure
+{
+    padding: 20px 0px 0px 0px;
+}
+
+/*credit correspond au message au pied de la page*/
+
+.credit
+{
+    text-align: center;
+    padding: 40px 0px 30px;
+    font-size: 15px;
+}
+
+
+/*pseudo correspond au label du pseudo, soit le message devant la boite de texte*/
+.pseudo
+{
+    padding: 20px 30px 0px;
+}
+
+/*pseudo_box correspond à la zone de texte pour écrire son pseudo*/
+
+#pseudo_box
+{
+    padding: 0px 150px 0px 0px;
+}
+
+/*message correspond au label de la zone de texte pour écrire son message*/
+
+.message
+{
+    padding: 20px 30px 0px;
+}
+
+/*message_zone correspond à la zone de texte pour écrire son message*/
+
+#message_zone
+{
+    padding: 0px 300px 50px 0px;
+}
+
+/*envoyer correspond au bouton pour envoyer son message*/
+
+#envoyer
+{
+    padding: 10px 50px;
+    margin: 30px 20px;
+}
+
+.envoyer
+{
+    text-align: right;
+}
+
+.image
+{
+
+    display: flex;
+    justify-content: center;
+}
+
+#image
+{
+    max-width: 50%;
+	height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.image:hover{
+    scale: 1.05;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Aloria Chat
+{% endblock %}
+
+{% block content %}
+<!-- <h1>Aloria Chat</h1>-->
+<div class="image">
+<a href="index"><img src="static\other\acceuil.png" alt="Aloria Chat" id="image"></a>
+</div>
+{% for message in messages %}
+<div class="messagebox">
+    <div class="pseudo_display"><b>{{ message[0] }}</b><br>
+    {{ message[1] }}</div>
+    <div class="heure"><i>{{ message[2] }}</i></div>
+</div>
+
+{%- endfor %}
+
+<form action="/forum" method="POST">
+    <div class="pseudo">
+    <label>Pseudo :</label>
+    <input type="text" name="message" class= "demande" id = "pseudo_box">
+    </div>
+    <br>
+    <div class="message">
+    <label>Message :</label>
+    <input type="text" name="pseudo" id = "message_zone">
+    </div>
+    <div class="envoyer">
+    <input type="submit" value="Envoyer" class= "demande" id = "envoyer">   
+    </div>
+</form>
+
+<div class="credit">© Aloria Chat, 2023. Site créé par Hugo, Waessim et Titouan. Tous droits réservés.</div>
+{% endblock %}
+
+{% block foot %}
+{% endblock %}
