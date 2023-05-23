@@ -47,6 +47,8 @@ def chat():
         nouvelle_heure = heure_actuelle + timedelta(hours=2) #je rajoute 2h car la machine qui heberge doit être 2h en retard
         format_heure = "%d-%m-%Y %H:%M:%S"
         heure_str = nouvelle_heure.strftime(format_heure)
+        if len(request.form["message"]) == 0 or len(request.form["pseudo"]) == 0:
+            return render_template('forum.html', messages=messages)
         new_message = [request.form["message"], request.form["pseudo"], heure_str]
         messages+= [new_message]
         #On stocke les données relatives au message envoyé
