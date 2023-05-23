@@ -1,6 +1,7 @@
 # This is a sample Python script.
 from flask import Flask, render_template, request
 from time import strftime
+from datetime import datetime, timedelta
 
 forum = Flask(__name__)
 
@@ -42,7 +43,11 @@ def chat():
     messages = list(old_message)
     #Quand un utilisateur envoie un message on récupère : le pseudo, le message et l'heure
     if request.method == 'POST':
-        new_message = [request.form["message"], request.form["pseudo"], strftime("%d-%m-%Y %H:%M:%S")]
+        heure_actuelle = datetime.now()
+        nouvelle_heure = heure_actuelle + timedelta(hours=2)
+        format_heure = "%d-%m-%Y %H:%M:%S"
+        heure_str = nouvelle_heure.strftime(format_heure)
+        new_message = [request.form["message"], request.form["pseudo"], heure_str]
         messages+= [new_message]
         #On stocke les données relatives au message envoyé
         file = open("discussion.txt", "a")
