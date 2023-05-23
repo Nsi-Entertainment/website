@@ -123,3 +123,30 @@ h1
     scale: 1.05;
     cursor: pointer;
 }
+
+.topbox{
+    display: flex;
+}
+
+#box1{
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    margin-right: 0px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    background-color: rgb(35, 36, 36);
+    color: white
+}
+
+
+#box2{
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    background-color: rgb(35, 36, 36);
+}
+
