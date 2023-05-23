@@ -44,7 +44,7 @@ def chat():
     #Quand un utilisateur envoie un message on récupère : le pseudo, le message et l'heure
     if request.method == 'POST':
         heure_actuelle = datetime.now()
-        nouvelle_heure = heure_actuelle + timedelta(hours=2)
+        nouvelle_heure = heure_actuelle + timedelta(hours=2) #je rajoute 2h car la machine qui heberge doit être 2h en retard
         format_heure = "%d-%m-%Y %H:%M:%S"
         heure_str = nouvelle_heure.strftime(format_heure)
         new_message = [request.form["message"], request.form["pseudo"], heure_str]
