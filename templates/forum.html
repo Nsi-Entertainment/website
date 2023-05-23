@@ -9,6 +9,9 @@ Aloria Chat
 <div class="image">
 <a href="index"><img src="static\other\acceuil.png" alt="Aloria Chat" id="image"></a>
 </div>
+<div class="lien_bas">
+<a href="#credit">Aller au dernier message</a>
+</div>
 {% for message in messages %}
 <div class="messagebox">
     <div class="pseudo_display"><b>{{ message[0] }}</b><br>
@@ -33,7 +36,7 @@ Aloria Chat
     </div>
 </form>
 
-<div class="credit">© Aloria Chat, 2023. Site créé par Hugo, Waessim et Titouan. Tous droits réservés.</div>
+<div class="credit" id="credit">© Aloria Chat, 2023. Site créé par Hugo, Waessim et Titouan. Tous droits réservés.</div>
 {% endblock %}
 
 {% block foot %}
